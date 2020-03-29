@@ -24,13 +24,20 @@ public class PozdravljenEclipse {
 		try {
 			ps.izprazni(100);
 			System.out.println("Iz steklenice " + ps.getZnamka() + " izpraznimo 100 ml piva.");
-			System.out.println("Ostane še " + ps.getKolicinaVsebine()) + "ml piva.";
+			System.out.println("Ostane še " + ps.getKolicinaVsebine() + "ml piva.");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			System.out.println("Prišlo je do napake pri praznenju steklenice!");
 		}
 		
-				
+		try {
+			ps.izprazni(50);
+			System.out.println("Iz steklenice " + ps.getZnamka() + " izpraznimo še 50 ml piva.");
+			System.out.println("Ostane še " + ps.getKolicinaVsebine() + "ml piva.");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println("Prišlo je do napake pri praznenju steklenice!");
+		}				
 				
 	}
 	
